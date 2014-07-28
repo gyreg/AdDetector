@@ -26,10 +26,17 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <service android:name=".FloatWindowService" >
-        </service>
+        </activity>  
+	 <service android:name=".FloatWindowService" ></service>
+ <receiver android:name=".MonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"></data>
+            </intent-filter>
+        </receiver>
+        <service android:name=".ScanServive"></service>
     </application>
 
 </manifest>

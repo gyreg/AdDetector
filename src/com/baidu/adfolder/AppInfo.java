@@ -7,15 +7,28 @@ import android.graphics.drawable.Drawable;
 
 public class AppInfo {
 	
+	
+	public AppInfo() {
+		
+	}
+	public AppInfo(Drawable icon, String name, String packgeName,
+			String[] adList) {
+		super();
+		this.icon = icon;
+		this.name = name;
+		this.packgeName = packgeName;
+		this.adList = adList;
+	}
 	private Drawable icon;
 	private String name;
 	private String packgeName;
-	private List<String> adList;
+	private String[] adList;
+	private List<String> classes;
 	
-	public List<String> getAdList() {
+	public String[] getAdList() {
 		return adList;
 	}
-	public void setAdList(List<String> adList) {
+	public void setAdList(String[] adList) {
 		this.adList = adList;
 	}
 	public Drawable getIcon() {
@@ -35,6 +48,12 @@ public class AppInfo {
 	}
 	public void setPackgeName(String packgeName) {
 		this.packgeName = packgeName;
+	}
+	public List<String> getClasses() {
+		return classes;
+	}
+	public void setClasses(List<String> classes) {
+		this.classes = classes;
 	}
 	
 }
