@@ -127,8 +127,8 @@ public class Util {
 		JSONObject data = (JSONObject) jsonParser.nextValue();
 		JSONArray jsonArray = data.getJSONArray("pluglist");
 		for (int i = 0; i < jsonArray.length(); i++) {   
-            JSONObject item = jsonArray.getJSONObject(i); // �õ�ÿ������   
-            String plugname = item.getString("plugname");     // ��ȡ�����Ӧ��ֵ   
+            JSONObject item = jsonArray.getJSONObject(i); // 
+            String plugname = item.getString("plugname");     // 
             String sig = item.getString("sig");  
             List<String> sigs;
             sigs = new ArrayList<String>();
@@ -140,7 +140,7 @@ public class Util {
             	sigs.add(sig);
             }
             
-            map = new HashMap<String, ArrayList<String>>(); // ��ŵ�MAP����   
+            map = new HashMap<String, ArrayList<String>>(); // 
             map.put(plugname, (ArrayList<String>) sigs);            
             list.add(map);
         }   
