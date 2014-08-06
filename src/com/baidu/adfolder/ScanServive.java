@@ -35,6 +35,9 @@ public class ScanServive extends Service {
 	@Override
 	public void onStart(Intent intent, int startId) {
 		super.onStart(intent, startId);
+		if(intent==null){
+		return;
+		}
 		packName = intent.getExtras().getString("package");
 		scanType = intent.getExtras().getInt("SCAN_TYPE");
 		manager = AdResultManager

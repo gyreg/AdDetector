@@ -33,8 +33,9 @@ public class FloatFolder extends Activity {
 				false);
 		// create shortcut
 		// if first time create it
-		initAdDB();
+		
 		if (!exists) {
+		    initAdDB();
 			setUpShortCut();
 		} else {
 			Intent intent = new Intent(FloatFolder.this,
@@ -60,7 +61,7 @@ public class FloatFolder extends Activity {
 
 		shortcut.putExtra(Intent.EXTRA_SHORTCUT_NAME, name);
 
-		shortcut.putExtra("duplicate", true);
+		shortcut.putExtra("duplicate", false);
 
 		Intent shortcutIntent = new Intent(Intent.ACTION_MAIN);
 		shortcutIntent.putExtra("tName", name);
