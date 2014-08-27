@@ -3,5 +3,6 @@
     <string name="app_name">AdFolder</string>
     <string name="folderName">AdFolder</string>
     <string name="NoAds">恭喜！您的手机中没有广告程序！</string>
+    <string name="containAD">包含广告：</string>
 
 </resources>

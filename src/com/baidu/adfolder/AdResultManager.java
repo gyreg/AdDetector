@@ -101,7 +101,7 @@ public class AdResultManager {
 				String pkgName = cursor.getString(cursor
 						.getColumnIndex(COLUMN_APP_PACKAGENAME));
 				String[] adList = cursor.getString(
-						cursor.getColumnIndex(COLUMN_APP_PACKAGENAME)).split(
+						cursor.getColumnIndex(COLUMN_AD_NAME)).split(
 						";");
 				PackageManager pm = mContext.getPackageManager();
 

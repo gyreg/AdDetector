@@ -48,6 +48,69 @@
             android:background="@drawable/window"
             android:orientation="vertical" >
 
+            <LinearLayout
+                android:id="@+id/LL_AdInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="4dp" >
+
+                    <ImageView
+                        android:id="@+id/pack_icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/pack_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="5"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/uninstall"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/uninstall" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_contain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/containAD"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_ads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/tv_note"
                 android:layout_width="wrap_content"

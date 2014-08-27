@@ -55,5 +55,12 @@ public class AppInfo {
 	public void setClasses(List<String> classes) {
 		this.classes = classes;
 	}
+	public String getAdListToStr(){
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < adList.length; i++) {
+			sb.append(adList[i]+"\n");
+		}
+		return sb.toString();
+	}
 	
 }
